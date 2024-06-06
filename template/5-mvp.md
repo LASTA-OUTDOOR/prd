@@ -2,34 +2,64 @@
 
 ## Personas and Scenarios
 
-*Who are the target personas for this product?*
-experienced sportsmen and women but also casual people who hike now and then for example
-*Which is the key persona?*
-the more casual user will be in greater number, so it is the key persona
-*High-level scenarios to adopt, use and share the product.*
-A father is looking for a hiking activity with his daughter, finds one on the app, gather informations on the hiking spot and tracks the time it took them to complete it.
+**Target Personas:**
+- Experienced sports enthusiasts
+- Casual outdoor activity seekers (e.g., occasional hikers)
+
+**Key Persona:**
+- Casual users, as they will be in greater number
+
+**High-Level Scenarios:**
+- A father uses the app to find a hiking activity for him and his daughter, gathers information about the hiking spot, and tracks the time it took to complete the hike.
 
 ## User Stories and Key Features
 
-*User stories about how various personas will use the product in context.*
+**User Stories:**
+1. As a casual user, I want to find hiking spots near me, so I can plan a weekend outing.
+2. As an experienced sportsman, I want detailed information on rock climbing spots, including difficulty levels and required equipment, to prepare adequately.
+3. As a user, I want to track my activity duration and share my experience with friends, so I can keep a log and inspire others.
 
-*Identify and prioritise the key features required.*
-
-*Justify the importance of each feature.*
+**Key Features:**
+1. **Activity Recommendations**: Personalized based on preferences and conditions.
+   - *Importance*: Enhances user experience by providing relevant suggestions.
+2. **Detailed Spot Information**: Weather forecasts, difficulty levels, required equipment.
+   - *Importance*: Helps users prepare and ensures safety.
+3. **Social System**: Add friends, view their feed, share activities.
+   - *Importance*: Increases user engagement and community building.
+4. **Activity Tracking**: Track and log the duration and details of activities.
+   - *Importance*: Allows users to monitor progress and share achievements.
+5. **Offline Mode**: Access to app features without internet connectivity.
+   - *Importance*: Ensures usability in remote outdoor locations with no internet access.
 
 ## Success Criteria
 
-*How will you evaluate the success of the MVP?*
+**Evaluation Metrics:**
+1. **User Penetration and Engagement**:
+   - Onboard at least 1,000 users in the first month.
+   - Achieve a Daily Active User (DAU) rate of 10% and Monthly Active User (MAU) rate of 70%.
+   - Maintain a retention rate of at least 60% in the second month.
+2. **User Satisfaction**:
+   - Achieve an average rating of 4 out of 5 stars on app stores within the first two months.
+   - Gather positive feedback from at least 80% of users through monthly surveys.
+   - Implement at least half of the user-requested features or improvements within two weeks of feedback.
 
-*Metrics include user penetration, quality / satisfaction.*
-
-*If applicable, progress in discussions with ecosystem partners / investors / customers.*
+**Partnership and Investment Progress**:
+   - Engage with potential ecosystem partners, investors, and customers to discuss collaboration and funding opportunities.
 
 ## Features Outside the Scope
 
-*The MVP must be viable and minimal.*
+**Exclusions for MVP**:
+1. **Advanced Navigation Tools**: Real-time GPS tracking and turn-by-turn navigation.
+   - *Reason*: Complex implementation; to be added post-MVP.
+2. **In-Depth Social Integration**: Advanced social features like group activity planning.
+   - *Reason*: Initially focus on core functionality; expand social features later.
 
-*Which features don’t belong in it.*
+**Integration Sequence**:
+1. **Post-MVP Phase 1**: Implement advanced navigation tools.
+2. **Post-MVP Phase 2**: Expand social features and introduce group activity planning.
 
-*How should these be eventually integrated and in what sequence.*
+
+
+
+
 
