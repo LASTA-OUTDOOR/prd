@@ -130,6 +130,12 @@ Here we list all the data that stay within the memory of an API call’s executi
 
 - **Favorite Activities** Stores the current user's favorite activities to facilitate quick access and reduce database queries.
 
+## Security Considerations
+
+- **HTTPS**: We must ensure that all communications between the Android app, the notifications server and all API's and databases are over HTTPS.
+- **API keys**: We must make sure that all api keys used for interacting with the services must be kept secret and not be exposed in the Android application.
+- **Users notification token**: Android notifications tokens are refreshed randomly for each device, we must make sure we store these tokens securely and make sure they are synchronised and refreshed correctly considering encryption and secure storage practices.
+
 ## Infrastructure and Deployment
 
 *How is the application developed, tested and deployed?*
