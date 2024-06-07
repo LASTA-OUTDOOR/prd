@@ -7,14 +7,14 @@ The realisation of the MVP described beforehand will be done over the course of 
 
 #### Milestone 1
 
-Set up and start of core front/backend features and development tools.
--Set up FIGMA for future front-end development
--Start basic database functionalities using Firebase
--Set up Google authentication
--Set up the base for API calls using OpenStreetMap to get outdoor activities
--Set up a map screen using Google Maps API
--Set up a profile screen
--Set up navigation between screens
+Set up and start of core front/backend features and development tools\
+-Set up FIGMA for future front-end development\
+-Start basic database functionalities using Firebase\
+-Set up Google authentication\
+-Set up the base for API calls using OpenStreetMap to get outdoor activities\
+-Set up a map screen using Google Maps API\
+-Set up a profile screen\
+-Set up navigation between screens\
 
 
 
@@ -27,18 +27,18 @@ Set up and start of core front/backend features and development tools.
 
 #### Milestone 2
 
-Create a Community tab, implement features to improve user experience, add weather report and add a Discover tab.
--Create a community screen
--Create database functions to add friends
--Create UI to see friend's profile
--Create a messaging system (DB + UI)
--Create a More Info tab to learn more about activities
--Add basic information about the weather
--Translate the app to French and German
--Add a settings tab
--Create a discover screen (to see activities in list form)
--Add filtering options to the discover tab
--Add ratings to activities
+Create a Community tab, implement features to improve user experience, add weather report and add a Discover tab\
+-Create a community screen\
+-Create database functions to add friends\
+-Create UI to see friend's profile\
+-Create a messaging system (DB + UI)\
+-Create a More Info tab to learn more about activities\
+-Add basic information about the weather\
+-Translate the app to French and German\
+-Add a settings tab\
+-Create a discover screen (to see activities in list form)\
+-Add filtering options to the discover tab\
+-Add ratings to activities\
 
 
 | **Sprint/Week Number** | **Objective** | **Outcomes** |
@@ -49,14 +49,14 @@ Create a Community tab, implement features to improve user experience, add weath
 
 #### Milestone 3
 
- Notification system, offline mode, start of tracking for activities
+ Notification system, offline mode, start of tracking for activities\
 
--Add notification for friend request and messages
--Create android room database for the offline mode
--Add the ability to dowload activites
--Store users' profiles offline
--Add a step counter
--Add the ability to start tracking for activities using the user's position
+-Add notification for friend request and messages\
+-Create android room database for the offline mode\
+-Add the ability to dowload activites\
+-Store users' profiles offline\
+-Add a step counter\
+-Add the ability to start tracking for activities using the user's position\
 
 | **Sprint/Week Number** | **Objective** | **Outcomes** |
 ----------------------------------------------------------
@@ -66,11 +66,11 @@ Create a Community tab, implement features to improve user experience, add weath
 
 #### Milestone 4
 
-Finish tracking, delete account, polish UI and debugging. 
--Add pictures for activities
--Add information about distance, speed and altitude to the tracking
--Debug the app in general
--Fix/polish UI
+Finish tracking, delete account, polish UI and debugging\
+-Add pictures for activities\
+-Add information about distance, speed and altitude to the tracking\
+-Debug the app in general\
+-Fix/polish UI\
 
 | **Sprint/Week Number** | **Objective** | **Outcomes** |
 ----------------------------------------------------------
@@ -79,9 +79,9 @@ Finish tracking, delete account, polish UI and debugging.
 
 #### Milestone 5
 
-Initial rollout to alpha testers
--Allow a set number of alpha testers to access the app to report any issues
--Fix the bugs/UX problem they report
+Initial rollout to alpha testers\
+-Allow a set number of alpha testers to access the app to report any issues\
+-Fix the bugs/UX problem they report\
 | **Sprint/Week Number** | **Objective** | **Outcomes** |
 ----------------------------------------------------------
 | Week 11                  | Alpha testing  |   |
@@ -89,10 +89,10 @@ Initial rollout to alpha testers
 
 #### Milestone 6
 
-Rollout of version 1.0 of the app to the App store
--Publish the app 
--Observe any issues not previously found or caused by the higher number of users
--Keep up with performance statitics
+Rollout of version 1.0 of the app to the App store\
+-Publish the app\
+-Observe any issues not previously found or caused by the higher number of users\
+-Keep up with performance statitics\
 | **Sprint/Week Number** | **Objective** | **Outcomes** |
 ----------------------------------------------------------
 | Week 13/14                 | Rollout and observation  |   |
