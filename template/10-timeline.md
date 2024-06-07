@@ -41,7 +41,7 @@ Create a Community tab, implement features to improve user experience, add weath
 
 
 | Sprint/Week Number | Objective | Outcomes |
-----------------------------------------------------------
+---------------------|------------|-------------------------|
 | Week 4                 | Start of Community tab and Discover screen  | Create community screen, functions to add friends and ability to see friend's profiles. Create discover screen and filtering options for it |
 | Week 5                 | End of Community tab, UX improvements and More Info screen |  Create messaging system, translate the app, a and other smaller UI changes |
 | Week 6                 | Weather and Settings tab  |  Create weather tab and add basic fucntionalities to see weather for the next day. Create a settings tab to modify preferences and allow user to log out of their account|
