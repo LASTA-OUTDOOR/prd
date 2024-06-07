@@ -148,6 +148,13 @@ The application itself will be developed with Android's framework for native dev
 
 ## Test Plan
 
-*How is the application developed, tested and deployed?*
+We will user Kotlin's integrated JUnit library for UI testing and and also unit testing.
 
-*Any special infrastructure requirements.*
+### Unit tests
+We will need to test all API calls for data consistency as well as DB queries.
+
+### Integration tests
+Since we will have a dynamically rendered UI, we need to make sure that every graphical component will be rendered correctly and handles user input accodingly.
+
+### End-to-end tests
+We will have to make sure that navigating through the app does not raise any issues and that all UI components may be rendered properly whilst doing so.
