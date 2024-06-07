@@ -30,6 +30,8 @@
    - *Importance*: Allows users to monitor progress and share achievements.
 5. **Offline Mode**: Access to app features without internet connectivity.
    - *Importance*: Ensures usability in remote outdoor locations with no internet access.
+6. **Account Management**: Manage user preferences, account settings, and options to delete account.
+   - *Importance*: Provides users control over their account and personal data.
 
 ## Success Criteria
 
