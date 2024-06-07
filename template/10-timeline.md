@@ -17,7 +17,6 @@ Set up and start of core front/backend features and development tools\
 -Set up navigation between screens\
 
 
-
 | Sprint/Week Number | Objective | Outcomes |
 ---------------------|------------|-------------------------|
 | Week 1                 |  Set up and research    | Set up FIGMA (and begin the wireframe), Google Authetication and Firebase DB. Research APIs            |
@@ -82,6 +81,7 @@ Finish tracking, delete account, polish UI and debugging\
 Initial rollout to alpha testers\
 -Allow a set number of alpha testers to access the app to report any issues\
 -Fix the bugs/UX problem they report\
+
 | Sprint/Week Number | Objective | Outcomes |
 ---------------------------|----------------|---------------|
 | Week 11                  | Alpha testing  |   |
@@ -93,11 +93,10 @@ Rollout of version 1.0 of the app to the App store\
 -Publish the app\
 -Observe any issues not previously found or caused by the higher number of users\
 -Keep up with performance statitics\
+
 | Sprint/Week Number | Objective | Outcomes |
-|-------------------- |-----------|---------|
+|-------------------|-----------|---------|
 | Week 13/14                 | Rollout and observation  |   |
-
-
 
 ## Development Resources
 
