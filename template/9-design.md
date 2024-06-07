@@ -143,9 +143,8 @@ Here we list all the data that stay within the memory of an API call’s executi
 
 ## Infrastructure and Deployment
 
-*How is the application developed, tested and deployed?*
-
-*Any special infrastructure requirements.*
+The backend notification server will be deployed as a docker container into a manually set up server running in St-Sulpice. We will purchase a domain name for having this server indexed under our services and will later use this domain for link forwarding in-app.
+The application itself will be developed with Android's framework for native development: Jetpack compose which uses kotlin and gradle as its main tools.
 
 ## Test Plan
 
