@@ -34,14 +34,14 @@ Furthermore, to ensure smooth functionality in offline mode, the app will retrie
 
 Finally, the UI will adjust to indicate when the app is in offline mode, such as displaying an "Offline" banner or disabling certain features that require an active internet connection.
 
-## Authentication 
+## Authentication
 
 ### Google Authentication
-The application user authentication is handled through both Google's Authentication service and traditional email and password login. This dual integration is essential for our MVP as it provides a secure and seamless login experience for users, catering to different user preferences. 
+The application user authentication is handled through both Google's Authentication service and traditional email and password login. This dual integration is essential for our MVP as it provides a secure and seamless login experience for users, catering to different user preferences.
 
 By utilizing Google's Authentication, we can quickly and reliably obtain crucial user information, including email, name, and profile picture. This approach not only simplifies the registration and login process but also enhances the user experience by enabling personalized features and interactions within the app.
 
-The email and password option ensures that users who prefer traditional login methods are also accommodated.  
+The email and password option ensures that users who prefer traditional login methods are also accommodated.
 
 Furthermore, care must be taken to avoid any potential leak of user's private information, even in the event of a data breach. Robust security measures will be implemented to protect all user data, regardless of the authentication method used.
 
@@ -58,7 +58,7 @@ Furthermore, care must be taken to avoid any potential leak of user's private in
 For Google Authentication, the backend will handle the OAuth 2.0 flow, verifying the authentication tokens received from the frontend. This process involves:
 
 1. Token Verification: The backend will verify the integrity and validity of the Google ID token using Google's public keys.
-2. Database Management: The backend will check if the user already exists in the database. If not, it will create a new user record with the retrieved information. 
+2. Database Management: The backend will check if the user already exists in the database. If not, it will create a new user record with the retrieved information.
 3. User Information Retrieval: Once verified, the backend will extract user information such as email, name, profile picture and others crucial information from the either the token or the database.
 
 For email and password authentication, the backend will handle user registration, login, and password management:
@@ -85,15 +85,50 @@ For Google Authentication, the OAuth tokens will be securely managed, and sensit
 
 ## Data Model
 
-*What data are you collecting / managing?*
+We will use Firebase Firestore for our NoSQL database solution. To enhance response times and maintain data consistency across user sessions and devices, Firestore's robust real-time synchronization and access capabilities will be utilized. Privacy is paramount; therefore, we handle and store user data with care, ensuring that sensitive information is protected. Below, we document the details of the schemas we will use.
 
-*How is it organised?*
+### Authless Data
 
-*Where is it stored?*
+ - **Activities** Purpose: Contains detailed information about each activity available in the app.
+    **Fields**: `activityId` (Primary Key), `osmId`, `activityType`, `name`, `startPosition`, `rating`, `numRatings`, `ratings`, `difficulty`, `activityImageUrl`, `climbingStyle`, `elevationTotal`, `from`, `to`, `distance`.
 
-*How is it shared/copied/cached?*
+    **Notes**: Aimed at providing users with comprehensive information about various activities to help them choose based on their preferences and skill levels.
 
-## Security Considerations
+### Auth User Data
+
+- **Users** Purpose: Manages user-specific data, ensuring a personalized experience while prioritizing privacy.
+
+    **Fields**: `userId` (Primary Key), `userName`, `email`, `profilePictureUrl`, `description`, `language`, `prefActivity`, `levels` (object with `climbingLevel`, `hikingLevel`, `bikingLevel`), `friends` (array of user IDs), `friendRequests` (array of user IDs), `favorites` (array of activity IDs).
+
+    **Notes**: The schema is designed to provide a rich user profile while ensuring that sensitive data is handled securely.
+
+- **User Activities** Purpose: Tracks user-specific activities across various categories such as Climbing, Hiking, and Biking.
+
+    **Fields**: `userId` (Primary Key). For Climbing: `activityId`, `timeStarted`, `timeFinished`, `numPitches`, `totalElevation`. For Hiking: `activityId`, `timeStarted`, `timeFinished`, `avgSpeed`, `distanceDone`, `elevationChange`. For Biking: `activityId`, `timeStarted`, `timeFinished`, `avgSpeed`, `distanceDone`, `elevationChange`.
+
+    **Notes**: This collection ensures that user activity data is detailed and categorized, helping users track their progress and achievements.
+
+- **Conversations** Purpose: Manages interactions between users.
+
+    **Fields**: `members` (array of user IDs), `messages` (array of objects with `content`, `from`, `timeStamp`), `lastMessage` (object representing the most recent message).
+
+    **Notes**: Designed to facilitate user communication and ensure that conversations are stored and managed efficiently.
+
+- **User FCM Tokens** Purpose: Stores FCM (Firebase Cloud Messaging) tokens for push notifications.
+
+    **Fields**: `token`, `createdAt`.
+
+    **Notes**: This collection is crucial for managing push notifications, ensuring users receive timely updates and alerts.
+
+Certainly, here is the revised In Memory Data section:
+
+### InMemory Data
+
+Here we list all the data that stay within the memory of an API call’s execution OR the app’s data layer. These are still important to standardize because they form the request-response structure.
+
+- **Current User** Stores the current user data to personalize and authenticate the user's experience while he is logged in.
+
+- **Favorite Activities** Stores the current user's favorite activities to facilitate quick access and reduce database queries.
 
 ## Infrastructure and Deployment
 
@@ -106,4 +141,3 @@ For Google Authentication, the OAuth tokens will be securely managed, and sensit
 *How is the application developed, tested and deployed?*
 
 *Any special infrastructure requirements.*
-
