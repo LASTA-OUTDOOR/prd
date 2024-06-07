@@ -81,7 +81,12 @@ For Google Authentication, the OAuth tokens will be securely managed, and sensit
 
 ## Backend
 
-*Decompose the MVP into functional blocks.*
+### Database Logic
+All database queries will be handled directly by the android app for fast reponse times. No middleware required.
+
+### Notifications server
+We will have a server running for constant notification service. It will handle user traffic as well as cloud functions and integration with services for real-time notifications.
+It will be written in kotlin using the Ktor framework.
 
 ## Data Model
 
